@@ -26,10 +26,10 @@ In the NEO prompt
 * import contract LuckyNeo.avm 05 05 True  
 * copy the contract hash from the invoke step and wait for the transaction to work its way through the chain
 * testinvoke {contract_hash} deploy
-- this deploys the contract and sets an empty array
+this deploys the contract and sets an empty array
 * testinvoke {contract_hash} '' --attach-gas=5
-- here we are sending gas to the contract and you'll see your entries printed out
-- any address on the test network can send entries 
+* here we are sending gas to the contract and you'll see your entries printed out
+* any address on the test network can send entries 
 * at the end of the time period the winner will automatically be sent their winnings 
 
 
