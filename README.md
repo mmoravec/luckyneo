@@ -15,6 +15,7 @@ Send your GAS to the contract address provided on our website at [www.luckyneo.c
 - Winner is drawn every two weeks
 - GAS is automatically sent to the winning address
 - See your chance to win on our website
+- 97% Payout at 1024 GAS
 
 ## Try it out yourself!
 We used the fantastic neo-python library to build and test Lucky NEO.

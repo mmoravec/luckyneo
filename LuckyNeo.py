@@ -83,7 +83,8 @@ def PickWinner():
         schash = GetExecutingScriptHash()
         entries = GetEntries()
         numEntries = len(entries)
-        OnWinner(winningEntry, numEntries, schash)
+        luckycut = .97 * numEntries
+        OnWinner(winningEntry, luckycut, schash)
         SetTime()
         Put(context, "entries", 0)
     else:
