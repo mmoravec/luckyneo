@@ -7,7 +7,7 @@ Lucky NEO lets users send GAS to a smart contract to enter into a two week conte
 Token games are a great past time that is fun for all. As your GAS dividends roll in, you can now use them to enter a contest for a chance to win up to 1024 GAS
 
 ## How does Lucky NEO work?
-Send your GAS to the contract address provided on our website at [www.luckyneo.com](www.luckyneo.com). See the page to view your current chance to win and countdown till our random draw. We will draw one winner at the end of the two week period. Winner is chosen at random.
+Send your GAS to the contract address provided on our website at [www.luckyneo.com](www.luckyneo.com). [Soon] See the page to view your current chance to win and countdown till our random draw. We will draw one winner at the end of the two week period. Winner is chosen at random.
 
 ## Features
 - Entries capped at 1024 GAS
