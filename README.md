@@ -21,12 +21,12 @@ We used the fantastic neo-python library to build and test Lucky NEO.
 * clone neo-python to your computer and follow the installation steps
 * setup a private chain and claim all NEO https://github.com/CityOfZion/neo-privatenet-docker 
 * open your wallet
-In the NEO prompt
+* move LuckyNeo.py to the neo-python main directory
 * build LuckyNeo.py 05 05 True
 * import contract LuckyNeo.avm 05 05 True  
 * copy the contract hash from the invoke step and wait for the transaction to work its way through the chain
 * testinvoke {contract_hash} deploy
-this deploys the contract and sets an empty array
+* this deploys the contract and sets an empty array
 * testinvoke {contract_hash} '' --attach-gas=5
 * here we are sending gas to the contract and you'll see your entries printed out
 * any address on the test network can send entries 
