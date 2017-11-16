@@ -1,4 +1,4 @@
-# LuckyNeo
+# Lucky NEO
 
 ## Overview
 Lucky NEO lets users send GAS to a smart contract to enter into a two week contest. At the end of the two weeks, one winner will be chosen to receive the winnings of the contest
@@ -15,4 +15,27 @@ Send your GAS to the contract address provided on our website at [www.luckyneo.c
 - Winner is drawn every two weeks
 - GAS is automatically sent to the winning address
 - See your chance to win on our website
+
+## Try it out yourself!
+We used the fantastic neo-python library to build and test Lucky NEO.
+* clone neo-python to your computer and follow the installation steps
+* setup a private chain and claim all NEO https://github.com/CityOfZion/neo-privatenet-docker 
+* open your wallet
+In the NEO prompt
+* build LuckyNeo.py 05 05 True
+* import contract LuckyNeo.avm 05 05 True  
+* copy the contract hash from the invoke step and wait for the transaction to work its way through the chain
+* testinvoke {contract_hash} deploy
+- this deploys the contract and sets an empty array
+* testinvoke {contract_hash} '' --attach-gas=5
+- here we are sending gas to the contract and you'll see your entries printed out
+- any address on the test network can send entries 
+* at the end of the time period the winner will automatically be sent their winnings 
+
+
+## Soon to come
+We will finish our site at luckyneo.com so that anyone wanting to participate will be able to send their gas to the listed address and track the contest progress on the site. 
+
+
+
 
