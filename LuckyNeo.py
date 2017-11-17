@@ -12,10 +12,11 @@ from boa.code.builtins import concat, list, range, take, substr
 SERIALIZED_NAME = 'LUCKYNEO'
 
 GAS_ASSET_ID = b'\xe7-(iy\xeel\xb1\xb7\xe6]\xfd\xdf\xb2\xe3\x84\x10\x0b\x8d\x14\x8ewX\xdeB\xe4\x16\x8bqy,`'
-OWNER = b'\xa3H\xb1\x0f\xafa{\xff\xccH\xd2\x8d\xeb"\xba\xafC5\x94\x1b'
+OWNER = b'V6\x88\xb0%\xbe\xf9\xac \xfbJ\xd2bq\xe4\xf2\xc9w \x86'
 TWOWEEKS = 1209600000
 
 OnWinner = RegisterAction('onWinner', 'to', 'amount', 'scripthash')
+OnRefund = RegisterAction('refund', 'to', 'amount')
 
 
 def Main(operation):
@@ -83,7 +84,7 @@ def PickWinner():
         schash = GetExecutingScriptHash()
         entries = GetEntries()
         numEntries = len(entries)
-        luckycut = .97 * numEntries
+        luckycut = numEntries - 30
         OnWinner(winningEntry, luckycut, schash)
         SetTime()
         Put(context, "entries", 0)
